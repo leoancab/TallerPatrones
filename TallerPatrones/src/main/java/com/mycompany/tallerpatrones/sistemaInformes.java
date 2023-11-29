@@ -1,3 +1,6 @@
+package com.mycompany.tallerpatrones;
+
+
 public class SistemaInformes {
     private static SistemaInformes instancia;
 
@@ -14,6 +17,10 @@ public class SistemaInformes {
         Informe informe = creator.createInforme();
         informe.visualizarReporte();
        
+    }
+
+    void generarYVisualizarInforme(PDFcreator I1creator) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }
