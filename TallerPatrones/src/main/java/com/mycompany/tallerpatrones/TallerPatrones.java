@@ -13,5 +13,14 @@ public class TallerPatrones {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
+
+         SistemaInformes sistemaInformes = SistemaInformes.getInstance();       
+        InformeCreator I1creator = new PDFcreator();
+        sistemaInformes.generarYVisualizarInforme(I1creator);
+
+        InformeCreator I2creator = new ExcelCreator();
+        sistemaInformes.generarYVisualizarInforme(I2creator);
+        
+    }
     }
 }
